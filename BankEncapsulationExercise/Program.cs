@@ -2,7 +2,10 @@
 
 BankAccount myBankAccount = new BankAccount();
 
-myBankAccount.Deposit(500.00);
+Console.WriteLine("Please make your deposit: ");
+double amountToDeposit = double.Parse(Console.ReadLine());
+
+myBankAccount.Deposit(amountToDeposit);
 Console.WriteLine(myBankAccount.GetBalance());
 
 myBankAccount.WithDraw(200.00);
